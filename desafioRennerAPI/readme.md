@@ -1,5 +1,5 @@
 
-#Exercício Renner API
+# Exercício Renner API
 
 CENÁRIO BÔNUS :
 Desenvolva um novo cenário para a anteriormente citada no qual é realizado o cadastro de um novo usuário.
@@ -16,23 +16,26 @@ CENÁRIOS BÔNUS:
 
 ----------------------------------------------------------------
 
-*Cenários automatizados*
-Testes de usuários através da API https://reqres.in/api/users
-Testes automatizado:
-    - Cadastro de usuário.
-    - Consulta de usuário.
-    - Consulta de lista de usuário.
-    - Update de usuário.
+# Cenários automatizados
+    - Testes de usuários através da API https://reqres.in/api/users
+    Cadastro de usuário.
+    Consulta de usuário.
+    Consulta de lista de usuário.
+    Update de usuário.
 
 ----------------------------------------------------------------
 
-*Tecnologias utilizadas*
-    - Java, RestAssured, JUnit, Maven e Cucumber.
+# Tecnologias utilizadas
+    Java
+    RestAssured
+    JUnit
+    Maven
+    Cucumber
 
 ----------------------------------------------------------------
 
-*Como executar o projeto*
-    - Basta executar a classe RunnerTest. Esta Classe responsável por executar os testes com execução JUnit, 
+# Como executar o projeto*
+    Basta executar a classe RunnerTest. Esta Classe responsável por executar os testes com execução JUnit, 
     atraves de tags criadas que direcionam a execução.
 
 ----------------------------------------------------------------
