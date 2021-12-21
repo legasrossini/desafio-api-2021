@@ -34,7 +34,7 @@ CENÁRIOS BÔNUS:
 
 ----------------------------------------------------------------
 
-# Como executar o projeto*
+# Como executar o projeto
     Basta executar a classe RunnerTest. Esta Classe responsável por executar os testes com execução JUnit, 
     atraves de tags criadas que direcionam a execução.
 
