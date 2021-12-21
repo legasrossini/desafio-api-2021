@@ -1,0 +1,629 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-21T18:08:44.859Z",
+        "line": 5,
+        "name": "Cadastro de usuario",
+        "description": "",
+        "id": "users;cadastro-de-usuario",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3988900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "que sejam preenchidos os valores de users com",
+            "match": {
+              "location": "steps.UsersSteps.queSejamPreenchidosOsValoresDeUsersCom(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "douglas@teste.com"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "teste2021"
+                ]
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1517181400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que seja realizado o POST do Users",
+            "match": {
+              "location": "steps.UsersSteps.queSejaRealizadoOPOSTDoUsers()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1998900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "o sistema devolve o status 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.UsersSteps.oSistemaDevolveOStatus(int)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 268972200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "valido que o campo \"email\" retornou o valor \"douglas@teste.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"douglas@teste.com\"",
+                  "offset": 44
+                }
+              ],
+              "location": "steps.UsersSteps.validoQueOCampoRetornouOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 6981400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "valido que o campo \"password\" retornou o valor \"teste2021\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"teste2021\"",
+                  "offset": 47
+                }
+              ],
+              "location": "steps.UsersSteps.validoQueOCampoRetornouOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@users"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-21T18:08:46.701Z",
+        "line": 14,
+        "name": "Consulta de usuario",
+        "description": "",
+        "id": "users;consulta-de-usuario",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "que seja utilizado o id \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.UsersSteps.queSejaUtilizadoOId(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 459941900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "que seja realizado o Get do Users",
+            "match": {
+              "location": "steps.UsersSteps.queSejaRealizadoOGetDoUsers()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "o sistema devolve o status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.UsersSteps.oSistemaDevolveOStatus(int)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 9952100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "valido que o campo \"data.id\" retornou o valor 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"data.id\"",
+                  "offset": 19
+                },
+                {
+                  "val": "1",
+                  "offset": 46
+                }
+              ],
+              "location": "steps.UsersSteps.validoQueOCampoRetornouOValor(java.lang.String,int)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 7214400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "valido que o campo \"data.email\" retornou o valor \"george.bluth@reqres.in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"data.email\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"george.bluth@reqres.in\"",
+                  "offset": 49
+                }
+              ],
+              "location": "steps.UsersSteps.validoQueOCampoRetornouOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 6982000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "valido que o campo \"data.first_name\" retornou o valor \"George\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"data.first_name\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"George\"",
+                  "offset": 54
+                }
+              ],
+              "location": "steps.UsersSteps.validoQueOCampoRetornouOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 5983300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "valido que o campo \"data.last_name\" retornou o valor \"Bluth\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"data.last_name\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Bluth\"",
+                  "offset": 53
+                }
+              ],
+              "location": "steps.UsersSteps.validoQueOCampoRetornouOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@users"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-21T18:08:47.195Z",
+        "line": 23,
+        "name": "Consulta lista de usuario",
+        "description": "",
+        "id": "users;consulta-lista-de-usuario",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 488812200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "que seja realizado o Get do Users",
+            "match": {
+              "location": "steps.UsersSteps.queSejaRealizadoOGetDoUsers()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "o sistema devolve o status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.UsersSteps.oSistemaDevolveOStatus(int)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 33142600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "valido que o campo \"data[0].id\" retornou o valor 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"data[0].id\"",
+                  "offset": 19
+                },
+                {
+                  "val": "1",
+                  "offset": 49
+                }
+              ],
+              "location": "steps.UsersSteps.validoQueOCampoRetornouOValor(java.lang.String,int)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 8975800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "valido que o campo \"data[0].email\" retornou o valor \"george.bluth@reqres.in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"data[0].email\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"george.bluth@reqres.in\"",
+                  "offset": 52
+                }
+              ],
+              "location": "steps.UsersSteps.validoQueOCampoRetornouOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 8976000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "valido que o campo \"data[0].first_name\" retornou o valor \"George\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"data[0].first_name\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"George\"",
+                  "offset": 57
+                }
+              ],
+              "location": "steps.UsersSteps.validoQueOCampoRetornouOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 14960300,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "valido que o campo \"data[0].last_name\" retornou o valor \"Bluth\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"data[0].last_name\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Bluth\"",
+                  "offset": 56
+                }
+              ],
+              "location": "steps.UsersSteps.validoQueOCampoRetornouOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 6980800,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "valido que o campo \"data[1].id\" retornou o valor 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"data[1].id\"",
+                  "offset": 19
+                },
+                {
+                  "val": "2",
+                  "offset": 49
+                }
+              ],
+              "location": "steps.UsersSteps.validoQueOCampoRetornouOValor(java.lang.String,int)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 6982500,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "valido que o campo \"data[1].email\" retornou o valor \"janet.weaver@reqres.in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"data[1].email\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"janet.weaver@reqres.in\"",
+                  "offset": 52
+                }
+              ],
+              "location": "steps.UsersSteps.validoQueOCampoRetornouOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 6981100,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "valido que o campo \"data[1].first_name\" retornou o valor \"Janet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"data[1].first_name\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Janet\"",
+                  "offset": 57
+                }
+              ],
+              "location": "steps.UsersSteps.validoQueOCampoRetornouOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 6981800,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "valido que o campo \"data[1].last_name\" retornou o valor \"Weaver\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"data[1].last_name\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Weaver\"",
+                  "offset": 56
+                }
+              ],
+              "location": "steps.UsersSteps.validoQueOCampoRetornouOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@users"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-21T18:08:47.781Z",
+        "line": 35,
+        "name": "Update de usuario",
+        "description": "",
+        "id": "users;update-de-usuario",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "que sejam preenchidos os valores de users com",
+            "match": {
+              "location": "steps.UsersSteps.queSejamPreenchidosOsValoresDeUsersCom(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "douglas@teste.com"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "teste2021"
+                ]
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 474939000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "que seja realizado o PATCH do Users com o id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 45
+                }
+              ],
+              "location": "steps.UsersSteps.queSejaRealizadoOPATCHDoUsersComOId(int)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "o sistema devolve o status 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.UsersSteps.oSistemaDevolveOStatus(int)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 4985500,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "valido que o campo \"email\" retornou o valor \"douglas@teste.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"douglas@teste.com\"",
+                  "offset": 44
+                }
+              ],
+              "location": "steps.UsersSteps.validoQueOCampoRetornouOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 7978800,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "valido que o campo \"password\" retornou o valor \"teste2021\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"teste2021\"",
+                  "offset": 47
+                }
+              ],
+              "location": "steps.UsersSteps.validoQueOCampoRetornouOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@users"
+          }
+        ]
+      }
+    ],
+    "name": "Users",
+    "description": "",
+    "id": "users",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/users.feature",
+    "tags": [
+      {
+        "name": "@users",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 3
+        }
+      }
+    ]
+  }
+]
