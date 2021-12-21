@@ -1,9 +1,6 @@
 
 # Exercício Renner API
 
-CENÁRIO BÔNUS :
-Desenvolva um novo cenário para a anteriormente citada no qual é realizado o cadastro de um novo usuário.
-
 2 - API:
 Desenvolva uma automação de testes para a API cuja documentação está descrita no site (https://reqres.in/).
 O projeto deve conter ao menos um cenário para cada um dos seguintes métodos do endpoint USERS:
