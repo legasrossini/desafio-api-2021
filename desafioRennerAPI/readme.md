@@ -1,5 +1,5 @@
 
-*Exercício Renner API*
+#Exercício Renner API
 
 CENÁRIO BÔNUS :
 Desenvolva um novo cenário para a anteriormente citada no qual é realizado o cadastro de um novo usuário.
